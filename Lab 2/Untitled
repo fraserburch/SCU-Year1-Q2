@@ -1,0 +1,43 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+class ModInt{
+private:
+  int mod;
+  int upperBound;
+  int result;
+  //upperBound should be one less than the mod
+
+public:
+  ModInt(){
+    mod = 0;
+    upperBound = 0;
+    result = 0;
+  }
+
+  ModInt(int modInput, int upperInput){
+    mod = modInput;
+    upperBound = upperInput;
+  }
+
+  int getMod(){
+    return mod;
+  }
+
+  int getUpperBound(){
+    return upperBound;
+  }
+
+  int main(){
+ModInt test = ModInt(2000, 1999);
+    cout << test.getMod() << endl;
+    cout << test.getUpperBound() << endl;
+
+  }
+
+
+
+
+};
